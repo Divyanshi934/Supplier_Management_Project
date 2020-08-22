@@ -1,0 +1,69 @@
+<script src='/javascripts/jquery-2.2.1.min.js'></script>
+<script src='/javascripts/statename.js'></script>
+<html>
+    <a href='/laptop/displays'>Display All</a><br>
+    <form action='/laptop/suppliersubmit' method='post' enctype="multipart/form-data">
+        <center>
+    <table>
+        <caption>Supplier Interface</caption>
+           
+        <tr>
+            <td><b><i>Supplier Name:</i></b></td>
+            <td><input type='text' name='suppliername'></td>
+        </tr>  
+        <tr>
+            <td><b><i>Date of Birth:</i></b></td>
+            <td><input type='date' name='dob'></td>
+        </tr>  
+        <tr>
+            <td><b><i>Gender:</i></b></td>
+            <td><input type='text' name='gender'></td>
+        </tr>    
+
+        <tr>
+            <td><b><i>Supplier Address:</i></b></td>
+       <td><input type='text' name='supplieradd'></td>
+        </tr>    
+
+        <tr>
+            <td><b><i>Supplier State:</i></b></td>
+            <td><select id='statename' name='state'>
+                <option>-State-</option></select>
+            </td>
+        </tr>    
+        <tr>
+            <td><b><i>Supplier City:</i></b></td>
+            <td><select id='cityname' name='city'>
+                <option>-City-</option></select>
+            </td>
+        </tr>    
+
+        <tr>
+            <td><b><i>Moblie No.:</i></b></td>
+            <td><input type='text' name='mno'></td>
+        </tr>    
+
+        <tr>
+            <td><b><i>Phone No.:</i></b></td>
+            <td><input type='text' name='pno'></td>
+        </tr>
+
+        <tr>
+            <td><b><i>Dealing:</i></b></td>
+            <td><input type='text' name='deal'></td>
+        </tr>     
+
+        <tr>
+            <td><b><i>Picture:</i></b></td>
+            <td><input type='file' name='picture'></td>
+        </tr>    
+
+        </tr>
+    </table>
+    
+
+    <input type='submit'> 
+    <input type='Reset'><br><br><%=msg%>
+</center>
+    </form>
+</html>
